@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-In</title>
+    <style>
+      #form{
+       width:45%;
+       height: auto;
+       padding:40px;
+       box-sizing: border-box;
+       margin: auto;
+       border-radius: 5px;
+       margin-top: 30px;
+       /* border:1px solid;  */
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #form>h1{
+        text-align: center;
+      }
+      #form>form{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing:border-box;
+      }
+      #form>form>input{
+        height:50px;
+
+      }
+      input[type="submit"]{
+        display: block;
+        color:white;
+        padding: 10px 20px;
+        background-color: rgb(0, 102, 238);
+        box-sizing: border-box;
+        border:0;
+        border-radius: 5px;
+      }
+      input[type="submit"]:hover{
+        background-color: rgb(25, 67, 207);
+      }
+      #form+p{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <h1>Member Login</h1>
+ <form>
+  <input type="email" id="email" placeholder="Enter Email"><br>
+  <input type="password" id="password" placeholder="Enter Password"><br>
+  <a href="login.html">Forgot Password?</a><br>
+  <input type="submit" value="LOG IN" id="log_in">
+</form>
+    </div>
+    <p>Not a member yet? <a href="signup.html">Sign up now!</a></p>
+  </body>
+</html>
+<script src="./login.js"></script>
