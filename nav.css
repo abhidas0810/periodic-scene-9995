@@ -1,0 +1,134 @@
+#nav1{
+    
+    width: 100%;
+    height: 100px;
+    display: flex;
+    
+} 
+#nav1>div:nth-last-child(1){
+    width: 10%;
+    height: 100%;
+   
+    
+}
+#nav1>div:nth-last-child(2){
+    width: 20%;
+    height: 100%;
+    /* here our 4th child prp is working  */
+    display: flex;
+    color:rgb(0,102,238);
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    font-weight: 400;
+}
+#nav1>div:nth-last-child(3){
+    width: 40%;
+    height: 100%;
+    
+}
+#nav1>div:nth-last-child(4){
+    width: 20%;
+    height: 100%;
+    color:rgb(0,102,238);
+    font-size: 18px;
+    font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    font-weight: 400;
+    }
+#nav1>div:nth-last-child(5){
+   
+    width: 10%;
+    height: 100%;
+    
+}
+.navBar {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content:space-evenly;
+    background-color:rgb(0,102,238);
+    
+    
+    }
+    menu {
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    font-size: 18px;
+    
+    font-weight: bold;
+    font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    font-weight: 400;
+    
+    }
+    
+    
+    .menu:hover {
+    
+    text-decoration: underline;
+    
+    }
+    
+    
+    .material-icons {
+    
+    display: flex;
+    
+    justify-content: space-around;
+    
+    }
+    
+    
+    .tool {
+    
+    width: 100%;
+    
+    display: flex;
+    
+    margin: 20px 20px;
+    
+    }
+    
+    
+    a,
+    
+    a:hover,
+    
+    a:focus,
+    
+    a:active {
+    
+    text-decoration: none;
+    
+    color: white;
+    
+    }
+    
+    
+    
+    #left
+    {
+    height: 60px;
+    width: 35%;
+    /* border: 1px solid black; */
+    display: flex;
+    
+    }
+    #left>div{
+    margin: auto;
+    
+    }
+
+    #main{
+       border: 1px solid maroon;
+        width: 100%;
+        height: 800px;
+        background-image: url("https://bellesrunningblog.com/wp-content/uploads/2018/07/background-berries-blueberries-1092730.jpg");
+    }
+    
+
