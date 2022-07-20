@@ -1,0 +1,68 @@
+#pre-button{
+    background-color: #FFC600;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.875rem;
+    padding: 4px 12px;
+}
+#premium-main{
+    background-image: url(./images/background1.svg);
+   
+    /* background-size: contain; */
+}
+#premium2{
+    padding-top: 0;
+        padding-bottom: 0;
+        background-size: 330px 548px;
+        background-image: url(./images/background2.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        display: flex;
+    
+}
+#pre-main{
+    width: 30%;
+    margin-left: 20%;
+    margin-top: 100px;
+}
+#pre-main>h4{
+color: #6D717A;
+}
+#button2{
+    background-color: #0066EE;
+    color: white;
+    padding: 15px 28px;
+    letter-spacing: 0.015625rem;
+    font-weight: 700;
+    border: none;
+}
+#pre-1{
+    width: 30%;
+}
+#pre-1>img{
+    width: 100%;
+    max-width: 411px;
+    padding-top: 32px;
+}
+#plans{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+}
+.plan>h3{
+text-align: center;
+font-weight: 700;
+line-height: 1.2;
+}
+.plan>h4{
+    text-align: center;
+    color: #6D717A;
+    font-weight: 400;
+    /* line-height: 1; */
+    margin-top: -10px;
+    }
+    .plan>img{
+        width: 80%;
+        margin-left: 20px;
+    }
