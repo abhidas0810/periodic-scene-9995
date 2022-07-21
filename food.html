@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="./food.css">
+    <title>Document</title>
+ 
+</head>
+
+<body>
+    <!-- <div class="leftbox">
+
+    </div> -->
+    
+    <form class="cont">
+        <input type="text" placeholder="Search for food" name="search" id="query" onsubmit="main()" >
+      <button id="btn" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+<div id="container">
+
+</div>
+<!-- image -->
+<div id="img1">
+    <img class="img2" src="https://www.myfitnesspal.com/_next/static/media/food-search.ca9350e8.svg">
+    <h1 class="h">
+Food Analaysis
+    </h1>
+    <p class="p">
+        Understand how the food you’re eating contributes to your daily calories, macronutrients, and micronutrients.
+    </p>
+</div>
+
+<h1 class="h2">
+    Recipes & Inspiration
+</h1>
+<div id="box1">
+<div class="IMG">
+    <img src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbreakfast-300-calories.d991cc82.png&w=1920&q=75">
+<h2>
+    15 Make -Ahead BreakFast under 300 Calories
+</h2>
+<a href="#">MYFitnessPalBlog</a>
+</div>
+
+    <div class="IMG">
+        <img src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frunning.deb62de2.png&w=1920&q=75">
+    <h2>
+        15 Make -Ahead BreakFast under 300 Calories
+    </h2>
+    <a href="#">MYFitnessPalBlog</a>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+<Script>
+
+ async function main(){
+    let query=document.getElementById("query").value;
+ 
+    let url=`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`
+
+    let res=await fetch(url)
+    let data=await res.json()
+    console.log(data)
+     append(data.meals)
+}
+
+
+
+
+ function append(data){
+    // console.log(data);
+    let container=document.getElementById("container")
+    data.forEach(function(el){
+
+        let box1=document.createElement("div")
+        
+        let p=document.createElement("p");
+        p.innerText=el.strMeal;
+
+        let image=document.createElement("img");
+        image.src=el.strMealThumb;
+        image.setAttribute("id","searchimg");
+
+      
+        box1.append(image,p);
+        container.append(box1);
+    })
+}
+</Script>
