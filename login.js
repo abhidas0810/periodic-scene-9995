@@ -1,9 +1,17 @@
+import navbar from "./components/navbar.js"
+// console.log(navbar())
+document.getElementById("navbar").innerHTML=navbar()
+
+import {footer} from "./footer.js"
+// console.log(footer())
+document.getElementById("footer").innerHTML=footer()
+
 let data=JSON.parse(localStorage.getItem("users")) ||[];
 
 
 document.querySelector("form").addEventListener("submit",allData)
 
-function allData(evemt){
+function allData(event){
     event.preventDefault();
     let email=document.getElementById("email").value;
     let password=document.getElementById("password").value;
