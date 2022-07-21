@@ -73,6 +73,7 @@
   border-bottom: 1px solid gray;
 }
 #featuredContent {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -91,6 +92,7 @@
   margin-bottom: 50px;
 }
 #marketplaceContent {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -106,12 +108,12 @@
   font-size: 14px;
   cursor: pointer;
   line-height: 4px;
-  margin-bottom: 1px;
+  margin-bottom: 8px;
 }
 .split2 > div > p:nth-child(2) {
   color: gray;
   font-size: 12px;
-  line-height: 4px;
+  /* line-height: 4px; */
   margin-bottom: 15px;
 }
 .split2 > div > p:nth-child(1):hover {
