@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      MyFitnessPal | Advice on weight loss, nutrition, recipes &amp; fitness
+    </title>
+    <link
+      rel="icon"
+      href="https://blog.myfitnesspal.com/wp-content/themes/under-armour/assets/images/site-mfp/favs/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./blog.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="signImg">
+      <h1>Fitness starts with what you eat.</h1>
+      <p>Sign up for your personalized newsletter.</p>
+      <div>
+        <input type="text" placeholder="Your Email" />
+        <a href="signup.html"><button>SIGN UP</button></a>
+      </div>
+    </div>
+    <div id="content">
+      <div id="trending">
+        <p class="trend"><span>Trending Articles </span></p>
+        <div id="trendAppend">
+          <div class="trendCart">
+            <img
+              src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/37772-featured-700x400.jpg"
+            />
+            <p>Your Home Screen is Getting a Makeover</p>
+          </div>
+        </div>
+      </div>
+      <div id="latest">
+        <p class="trend"><span>Trending Articles </span></p>
+        <div id="greatFood">
+          <div id="gr8">
+            <h1>15 Great Foods For Gut Health</h1>
+            <p>
+              A gut full of healthy bacteria may reduce your risk of arthritis,
+              depression, cardiovascular disease and cancer.
+            </p>
+            <h5>Jodi Helmer - July 20, 2022</h5>
+          </div>
+        </div>
+      </div>
+      <div id="infoAppend"></div>
+      <div id="loadparrent">
+        <button id="load">LOAD MORE</button>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script type="module">
+  import navbar from "../components/navbar.js";
+  document.getElementById("navbar").innerHTML = navbar();
+
+  import { footer } from "./footer.js";
+  document.getElementById("footer").innerHTML = footer();
+
+  // -----------------------------------------------------------tips-----------------------------------
+
+  let tip1 = [
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2021/07/Featured200smooth-1-750x592.jpg",
+      title: "5 Summer Desserts With Less Than 100 Calories",
+      date: "July 18, 2022",
+    },
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2017/10/How-to-Make-Your-Own-Almond-Butter-1-750x592.jpg.webp",
+      title: "How to Make Your Own Almond Butter",
+      date: "July 15, 2022",
+    },
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2021/07/3-Perks-of-Hot-Weather-Workouts-750x592.jpg",
+      title: "3 Perks of Hot-Weather Workouts",
+      date: "July 13, 2022",
+    },
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2022/06/5-Smart-and-Simple-Ways-to-Stay-Hydrated-750x592.jpg.webp",
+      title: "5 Smart and Simple Ways to Stay Hydrated",
+      date: "July 11, 2022",
+    },
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2021/07/How-to-Stay-Healthy-and-on-Track-With-Your-Health-Goals-on-Vacation-750x592.jpg",
+      title: "How to Stay on Track With Your Health Goals on Vacation",
+      date: "July 8, 2022",
+    },
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2021/08/10-Foods-That-Dietitians-Eat-on-Road-Trips-750x592.jpg",
+      title: "10 Foods That Dietitians Eat on Road Trips",
+      date: "July 6, 2022",
+    },
+  ];
+
+  let tip2 = [
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2018/07/Mixed-Berry-Tart-2-750x592.jpg.webp",
+      title: "Mixed Berry Tart",
+      date: "July 4, 2022",
+    },
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2019/07/15-Festive-Fourth-of-July-Recipes-Under-425-Calories-750x592.jpeg.webp",
+      title: "15 Festive Fourth of July Recipes Under 425 Calories",
+      date: "July 1, 2022",
+    },
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2021/01/5-Ways-to-Progress-From-Walking-to-Running-750x592.jpg",
+      title: "5 Ways to Progress From Walking to Running",
+      date: "June 29, 2022",
+    },
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2021/09/How-Much-Water-Should-You-Actually-Drink-750x592.jpg",
+      title: "How Much Water Should You Actually Drink?",
+      date: "June 27, 2022",
+    },
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2022/06/9-Healthy-Burger-Recipes-Under-450-Calories-750x592.jpeg",
+      title: "9 Healthy Burger Recipes Under 450 Calories",
+      date: "June 24, 2022",
+    },
+    {
+      image:
+        "https://blog.myfitnesspal.com/wp-content/uploads/2019/06/9-15-Iconic-Summer-Recipes-Under-350-Calories-750x592.jpg",
+      title: "13 Iconic Summer Recipes Under 350 Calories",
+      date: "June 20, 2022",
+    },
+  ];
+
+  let infoAppend = (data) => {
+    let cont = document.getElementById("infoAppend");
+    // cont.innerHTML = null;
+    data.map((ele) => {
+      let div = document.createElement("div");
+      div.className = "innerInfo";
+      let img = document.createElement("img");
+      img.src = ele.image;
+      let p = document.createElement("p");
+      p.innerText = ele.title;
+      let h5 = document.createElement("h5");
+      h5.innerText = ele.date;
+      div.append(img, p, h5);
+      cont.append(div);
+    });
+  };
+
+  infoAppend(tip1);
+
+  let more = () => {
+    infoAppend(tip2);
+    let cont = document.getElementById("loadparrent");
+    cont.removeChild(cont.children[0]);
+  };
+
+  document.getElementById("load").addEventListener("click", more);
+</script>
