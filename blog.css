@@ -1,0 +1,133 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Open Sans", Google Sans, Roboto, Arial, sans-serif;
+}
+#signImg {
+  background-image: url("https://blog.myfitnesspal.com/wp-content/plugins/newsletter-signup/src/email-background-desktop.jpg");
+  height: 248px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#signImg > h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: rgb(59, 57, 57);
+}
+#signImg > p {
+  color: rgb(78, 75, 75);
+}
+#signImg > div {
+  margin-top: 35px;
+}
+#signImg > div > a > button {
+  width: 100px;
+  font-size: 20px;
+  background-color: #2463ee;
+  color: white;
+  cursor: pointer;
+  width: 250px;
+  padding: 10px;
+  border: transparent;
+  border-radius: 5px;
+}
+#signImg > div > input {
+  color: #0277bd;
+  width: 100px;
+  font-size: 17px;
+  width: 248px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: 3px solid #2463ee;
+  margin-right: 15px;
+}
+#content {
+  width: 85%;
+  /* border: 1px solid; */
+  margin: auto;
+  margin-top: 70px;
+}
+.trend {
+  width: 100%;
+  border-bottom: 1px solid #2463ee;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+.trend span {
+  background: #fff;
+  padding-right: 10px;
+  color: grey;
+  font-weight: 900;
+}
+.trendCart {
+  width: 210px;
+}
+.trendCart > p {
+  color: grey;
+}
+.trendCart > img {
+  width: 200px;
+}
+#latest {
+  margin-top: 130px;
+}
+#greatFood {
+  background-image: url("https://blog.myfitnesspal.com/wp-content/uploads/2021/02/15-Great-Foods-For-Gut-Health-2-1140x545.jpg.webp");
+  width: 100%;
+  height: 545px;
+  margin-top: 30px;
+  padding-top: 300px;
+}
+#gr8 {
+  width: 560px;
+  height: 230px;
+  background-color: white;
+  margin-left: 20px;
+  /* border: 1px solid; */
+  padding: 30px;
+  padding-right: 100px;
+}
+#gr8 > h1 {
+  /* border: 1px solid; */
+  color: #2463ee;
+}
+#gr8 > p {
+  color: rgb(73, 73, 73);
+  margin-top: 15px;
+}
+#gr8 > h5 {
+  color: grey;
+  margin-top: 11px;
+}
+#infoAppend {
+  /* border: 1px solid; */
+  width: 100%;
+  /* height: 600px; */
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#infoAppend > div {
+  /* border: 1px solid; */
+}
+#infoAppend > div > img {
+  width: 100%;
+}
+#load {
+  display: block;
+  margin-top: 20px;
+  color: white;
+  background-color: #2463ee;
+  font-weight: 900;
+  font-size: 15.5px;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+}
