@@ -6,10 +6,12 @@ return `
 <div ></div>
 <div><h1>myfitnesspal</h1></div>
 <div></div>
-<div>
-    <div> <a href="login.html">Login</a></div>
-    <div>|</div>
-    <div>Sign Up</div>
+<div class ="log">
+     <div class="log"> <a href="login.html">Login </a></div>
+     <div>|</div>
+     <div class="log"><a href="sign up.html.html"> Sign Up</div>
+
+
 </div>
 <div></div>
 </div>
@@ -18,6 +20,7 @@ return `
 
 
 <div class="navBar">
+ <div class="navBar_content">
     <a href="About.html">
         <div class="menu">ABOUT</div>
     </a>
@@ -40,14 +43,17 @@ return `
         <div class="menu">PREMIUM</div>
     </a>
   </div>
-
-  <div id="main">
-    <div id="fitness">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div> 
-    </div>
+  </div>
     `
  }
  export default navbar
+
+
+ 
+//  <div id="main">
+//  <div id="fitness">
+//      <div></div>
+//      <div></div>
+//       <div></div>
+//   </div> 
+//  </div>
