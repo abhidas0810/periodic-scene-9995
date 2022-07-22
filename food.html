@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 <link rel="stylesheet" href="./food.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="footer.css">
     <title>Document</title>
  
 </head>
 
 <body>
-    <!-- <div class="leftbox">
+   <div id="navbar">
 
-    </div> -->
-    
-    <form class="cont">
+    </div> 
+    <div>
+    <input type="search" placeholder="Search for food" name="search" id="search">
+      <button id="btn" type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <!-- <form class="cont">
         <input type="text" placeholder="Search for food" name="search" id="query" onsubmit="main()" >
       <button id="btn" type="submit"><i class="fa fa-search"></i></button>
-      </form>
+      </form> -->
 <div id="container">
 
 </div>
@@ -42,7 +47,7 @@ Food Analaysis
 <h2>
     15 Make -Ahead BreakFast under 300 Calories
 </h2>
-<a href="#">MYFitnessPalBlog</a>
+<a href="https://blog.myfitnesspal.com/10-make-ahead-breakfasts-under-300-calories/">MYFitnessPalBlog</a>
 </div>
 
     <div class="IMG">
@@ -55,42 +60,199 @@ Food Analaysis
 
 </div>
 
+<!-- footer -->
+<div id="footer">
+
+</div>
 </body>
 </html>
 
-<Script>
+<Script type="module">
 
- async function main(){
-    let query=document.getElementById("query").value;
- 
-    let url=`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`
+import navbar from "./components/navbar.js"
+//  console.log(navbar())
+document.getElementById("navbar").innerHTML=navbar()
 
-    let res=await fetch(url)
-    let data=await res.json()
-    console.log(data)
-     append(data.meals)
-}
+import {footer} from "./footer.js"
+document.getElementById("footer").innerHTML=footer()
 
 
 
 
- function append(data){
-    // console.log(data);
-    let container=document.getElementById("container")
-    data.forEach(function(el){
-
-        let box1=document.createElement("div")
-        
-        let p=document.createElement("p");
-        p.innerText=el.strMeal;
-
-        let image=document.createElement("img");
-        image.src=el.strMealThumb;
-        image.setAttribute("id","searchimg");
-
+// Search 
+var Pizza=[
+    {
+        title:"Pizza",
+        name:"Totinos pizza, 1 pizza",
+        Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+       
+    },
+    {
+        title: "Pizza",
+        name: "Pizza, 1 half pizza",
+        Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
       
-        box1.append(image,p);
-        container.append(box1);
-    })
+    },
+    {
+        title: "Pizza",
+        name: "Nutrisystem pizza, 1 package",
+        Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+    
+
+    },
+    {
+        title: " Vegetarian Pizza",
+        name: "Omaha burger, 4 oz",
+        Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+       
+
+    },
+    {
+        title: "Pizza",
+        name: "pizza King, 277 g",
+        Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+       
+
+    },
+    {
+        title: "Pizza",
+        name: "pizza 93% lean, 1 pizza",
+        Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+       
+
+    },
+    {
+        title: "Pizza",
+        name: "Pizza 93% lean, 1 pizza",
+        Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+       
+
+    },
+    {
+        title:"Cauliflawer Pizza",
+        name:"Pizza King, 277 g",
+        Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+       
+
+    }
+];
+
+var Burger=[
+    {
+        title:"Burger",
+        name:"Burger 93% lean, 1 burger",
+        Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+     
+
+     },
+     {
+        title: "Burger",
+        name: "Burger 93% lean, 1 burger",
+        Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+       
+    },
+    {
+        title: "Burger Whopper",       
+          name: "Nutrisystem pizza, 1 package",
+         Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+        
+
+     },
+     {
+        title: "Burger",
+        name: "Ballpark burger, 1 burger",
+         Calories : "Calories-180 .carbs-26g .fat-5g .Protein-9g",
+       
+
+     },
+     {
+        title: "Loaded beef& pork burger",
+        name: "Symposium Burger, 8 oz.",
+        Calories : "Calories-180 carbs-26g fat-5g Protein-9g",
+       
+
+     },
+     {
+        title: "Veggi Burger",
+        name: "Veggie Burger, 1 patty",
+         Calories : "Calories-180 carbs-26g fat-5g Protein-9g",
+       
+
+    },
+    {
+        title: "Turkey Burger",
+        name: "Turkey burger, 1 piece",
+        Calories : "Calories-180 carbs-26g fat-5g Protein-9g",
+       
+
+    },
+    {
+        title:"Burger",
+        name:"Ballpark burger, 1 burger",
+        Calories : "Calories-180  carbs-26g  fat-5g  Protein-9g",
+       
+
+     },
+ ];
+
+
+ function main(data){
+    var container=document.getElementById("container")
+    // container.innerHTML=null
+data.forEach(function(el){
+    console.log(data)
+    var div = document.createElement("div");
+div.setAttribute("class","div")
+
+// var div1 = document.createElement("div");
+// div1.innerText="180"
+// div1.setAttribute("class","div1")
+    var h1=document.createElement("h2")
+    h1.setAttribute("class","title")
+ h1.innerText=el.title;
+ var p=document.createElement("p")
+ p.innerText=el.name;
+ var p1=document.createElement("p")
+ p1.innerText=el.Calories;
+ var p2=document.createElement("p1")
+ p2.innerText=el.Carbs;
+ var p3=document.createElement("p1")
+ p3.innerText=el.Fat;
+ var p4=document.createElement("p1")
+ p4.innerText=el.Protein;
+
+  div.append(h1,p,p1)
+container.append(div)
+})
 }
+
+document.getElementById("search").addEventListener("search",myfunction)
+
+
+function myfunction(){
+ 
+ let p=document.getElementById("search").value;
+
+ if(p=="Pizza"){
+     main(Pizza)
+ }
+ else{
+     main(Burger)
+ }
+
+   
+console.log("yes")
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
 </Script>
