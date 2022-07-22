@@ -9,7 +9,7 @@ return `
 <div class ="log">
      <div class="log"> <a href="login.html">Login </a></div>
      <div>|</div>
-     <div class="log"><a href="sign up.html.html"> Sign Up</div>
+     <div class="log"><a href="signUp.html"> Sign Up</div>
 
 
 </div>
