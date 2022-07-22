@@ -291,7 +291,7 @@ let result = () => {
   if (event.key == "Enter") {
     event.preventDefault();
     let val = document.getElementById("query").value;
-    if (val == "fitness") {
+    if (val == "fit") {
       appendSearch(fit);
     } else if (val == "health") {
       appendSearch(health);
