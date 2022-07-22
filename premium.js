@@ -1,12 +1,12 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -25,6 +25,25 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
+}
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active");
+
+    
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
 // import navbar from "../components/navbar.js";
 //   document.getElementById("navbar").innerHTML = navbar();
