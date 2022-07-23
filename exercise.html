@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./exercise.css">
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./footer.css" />
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="nav1">
+            <div ></div>
+            <div id ="fit"><h1>myfitnesspal</h1></div>
+            <div></div>
+            <div class ="log">
+                 <div class="log"> <a href="login.html">Login </a></div>
+                 <div>|</div>
+                 <div class="log"><a href="sign up.html.html"> Sign Up</div>
+            
+            
+            </div>
+            <div></div>
+            </div>
+            
+            <!-- Start navbar -->
+            
+            
+            <div class="navBar">
+             <div class="navBar_content">
+                <a href="About.html">
+                    <div class="menu">ABOUT</div>
+                </a>
+                <a href="food.html">
+                    <div class="menu">FOOD</div>
+                </a>
+                <a href="exercise.html">
+                    <div class="menu">EXCERCISE</div>
+                </a>
+                <a href="Apps.html">
+                    <div class="menu">APPS</div>
+                </a>
+                <a href="community.html">
+                    <div class="menu">COMMUNITY</div>
+                </a>
+                <a href="Blog.html">
+                    <div class="menu">BLOG</div>
+                </a>
+                <a href="Premium.html">
+                    <div class="menu">PREMIUM</div>
+                </a>
+              </div>
+              </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <h2 class="tittle">
+        Calories Burned From Exercise
+    </h2>
+    <h></h>
+    <div id="main">
+        <div id="A">
+            <div id="a">
+                <h3 id="h6">Search our exercise database by name:
+
+
+                </h3>
+                <input type="search" id="q" name="search">
+                <button id="button">
+                    Search
+                </button>
+            </div>
+            <div id="b">
+                <h3 id="h6"> ...or choose an exercise below:</h3>
+                <select id="s">
+                    <option>
+                        9Round
+                    </option>
+                    <option>
+                        Abdominal Crounches
+                    </option>
+                    <option>
+                        Abdominal Leg Rise
+                    </option>
+                    <option>
+                        Abdominal Twist Seated Manchine
+                    </option>
+                    <option>
+                        Aps
+                    </option>
+                    <option>
+                        Activity Track
+                    </option>
+                    <option>
+                        Adaption Motion Trainer
+                    </option>
+                    <option>
+                        Aerobic
+                    </option>
+                    <option>
+                        Aerobics gernal
+                    </option>
+                    <option>
+                        Aerobics highy impact
+                    </option>
+                    <option>
+                        Aerobics highy impact
+                    </option>
+                    <option>
+                        Back Extention
+                    </option>
+                    <option>
+                        Back Butterflly
+                    </option>
+                    <option>
+                        BackPacking gernal
+                    </option>
+                    <option>Barry</option>
+                    <option>Barry3</option>
+                    <option>
+                        Barrys Bootcamp
+                    </option>
+                </select>
+
+            </div>
+        </div>
+        <h3 class="matching">Matching exercises:</h3>
+        <div id="main-2">
+
+            <div id="c">
+
+
+            </div>
+            <div id="d">
+                <h3 class="H">
+                    How Many Calories Did I Burn?
+                </h3>
+
+                <div class="input">
+                    <span class="W">Your Weight:</span>
+                    <input type="text" value="">
+                    <!-- <input type="text" value=""> -->
+                    <select>
+                        <option>
+                            Kilograms
+                        </option>
+                        <option>Pounds</option>
+                        <option>
+                            Stone/Pounds
+                        </option>
+                    </select>
+                    <br>
+                    <span class="span">How Long :</span>
+                    <input type="text" class="weight">
+                    <span class="W">Minutes</span>
+                </div>
+                <h2 id="calory">
+                    Calories burned:0
+                </h2>
+            </div>
+        </div>
+
+
+    </div>
+
+    <h2 class="h5">Browse our exercise database by name:</h2>
+
+    <div id="link">
+        <a href="https://www.myfitnesspal.com/exercise/list_by_name/a">A</a>
+
+        <a href="#">B</a>
+        <a href="#">C</a>
+        <a href="#">D</a>
+        <a href="#">E</a>
+        <a href="#">F</a>
+        <a href="#">G</a>
+        <a href="#">H</a>
+        <a href="#">I</a>
+        <a href="#">J</a>
+        <a href="#">K</a>
+        <a href="#">L</a>
+        <a href="#">M</a>
+        <a href="#">N</a>
+        <a href="#">O</a>
+        <a href="#">P</a>
+        <a href="#">Q</a>
+        <a href="#">R</a>
+        <a href="#">S</a>
+        <a href="#">T</a>
+        <a href="#">U</a>
+        <a href="#">V</a>
+        <a href="#">W</a>
+        <a href="#">X</a>
+        <a href="#">Y</a>
+        <a href="#">Z</a>
+    </div>
+
+    <div id="footer">
+
+    </div>
+</body>
+
+</html>
+<script type="module">
+
+
+
+//  import navbar from "../components/navbar.js";
+//    document.getElementById("navbar").innerHTML = navbar();
+
+
+//   import { footer } from "./footer.js";
+//   document.getElementById("footer").innerHTML = footer();
+
+
+    //   import navbar from "../components/navbar.js";
+    //   document.getElementById("navbar").innerHTML = navbar();
+
+      import { footer } from "./footer.js";
+      document.getElementById("footer").innerHTML = footer();
+ console.log(footer())
+
+
+
+    document.getElementById("q").addEventListener("search", myfunction)
+      function myfunction() {
+
+        let R = document.getElementById("q").value;
+        append(q)
+
+
+
+
+        console.log("yes")
+
+      }
+
+     function append() {
+         let val = document.getElementById("q").value;
+         let p = document.createElement("p")
+         p.addEventListener("click", datafunc)
+         p.innerText = val
+         console.log(p)
+        let div1 = document.getElementById("c")
+         div1.innerHTML = null;
+         div1.append(p)
+
+
+     }
+     function datafunc() {
+         document.getElementById('calory').innerText = `Calories burned:${Math.floor(Math.random() * 100) + 1}`
+     }
+
+
+
+
+</script>
