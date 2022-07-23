@@ -242,6 +242,14 @@
     color:white;
     font-size: 1rem;
     }
+    #bt2{
+        padding: 13px 20px;
+        background-color: rgb(70, 107, 210);
+        border-radius: 6px;
+        margin-bottom: 60px;
+        color:white;
+        font-size: 1rem;
+        }
     
     
     #div32{
@@ -438,7 +446,10 @@
     color: white;
     font-weight: bolder;
     }
-       
+    #appstore{
+        display: flex;
+        gap:10px
+    }
         
     
     

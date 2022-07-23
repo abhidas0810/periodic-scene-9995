@@ -30,7 +30,7 @@ return `
     <a href="exercise.html">
         <div class="menu">EXCERCISE</div>
     </a>
-    <a href="Apps.html">
+    <a href="apps.html">
         <div class="menu">APPS</div>
     </a>
     <a href="community.html">
