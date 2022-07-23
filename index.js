@@ -2,6 +2,10 @@ import navbar from "./components/navbar.js"
 // console.log(navbar())
 document.getElementById("nav100").innerHTML=navbar()
 
+
+  import { footer } from "./footer.js";
+  document.getElementById("footer").innerHTML = footer();
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -29,4 +33,18 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+
+
 }
+document.getElementById("bt1").addEventListener("click",Mystart)
+function Mystart(){
+  // window.location.href="login.html"
+  // window.location.href=""
+  window.location.href="https://www.myfitnesspal.com/account/create/welcome?callbackUrl=https://www.myfitnesspal.com/apps"
+  
+  
+  
+  console.log("my ftn")
+
+}
+
