@@ -31,14 +31,15 @@ text-align: center;
 color: rgb(55, 55, 55);
 }
 .h2{
-   margin-left: 20%;
+   margin-left: 29%;
+   margin-bottom: 14px;
     margin-top: 10px;
 }
 #box1{
     height: 300px;
     width: 40%;
     /* border: 1px solid blue ; */
-    margin-left: 20%;
+    margin-left: 29%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
    grid-template-rows: repeat(1,1fr);
@@ -125,12 +126,13 @@ margin: auto;
 } 
 #search{
     margin-left: 33%;
-    padding: 10px 135px;
+    padding: 14px 195px;
     border-radius: 5px;
+    margin-top: 27px;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 #btn{
-    padding: 10px 20px;
+    padding: 14px 20px;
     border-radius: 10px;  
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -138,3 +140,5 @@ margin: auto;
 #container{
     margin-left: 30%;
 }
+
+

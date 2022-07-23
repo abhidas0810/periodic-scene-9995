@@ -1,0 +1,143 @@
+#main{
+    height: auto;
+    width: 56%;
+    /* border: 1px solid blue; */
+    background-color: #FFFFFF;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.tittle{
+    margin-left: 22%;
+    margin-top: 15px;
+    color: #0A5282;
+}
+#A{
+    height: 100px;
+width: 100%;
+/* border: 1px solid black; */
+grid-template-columns: repeat(2,1fr);
+display: grid;
+grid-template-rows: auto;
+/* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  */
+gap: 20px;
+}
+#a{
+height: 150px;
+width: 100%;
+/* border: 1px solid pink; */
+}
+#a input{
+ margin-top: 10px; 
+padding: 10px 45px;
+border-radius: 3px;
+/* border: 0px; */
+background-color: #FFFFFF;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#a button{
+padding: 10px 10px;
+border-radius: 3px;
+
+background-color: rgb(64, 170, 64);
+color: #d8d7d7;
+}
+.s option{
+scroll-behavior: smooth
+;
+}
+#s{
+padding: 10px 45px;
+border-radius: 3px;
+margin-top: 10px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ #h6{
+    margin-top: 10px;
+  
+color: #0A5282;
+}
+.h5{
+text-align: center;
+color: #0A5282;
+margin-top: 20px;
+}
+#main-2{
+height: auto;
+width: 100%;
+/* border: 1px solid green; */
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 20px;
+grid-template-rows: auto;
+}
+#c{
+height: 300px;
+width: 100%;
+border-radius: 3px;
+border: 1px solid black;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+}
+#d{
+height: auto;
+width: 100%;
+border-radius: 3px;
+/* border: 1px solid gold; */
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+background-color:  #F6F6F6
+}
+#link{
+margin-left: 35%;
+margin-top: 20px;
+
+}
+#link a{
+text-decoration: none;
+color: #0A5282;
+margin-left: 5px
+;
+margin-top: 34px;
+}  
+#d h3{
+text-align: center;
+color: #0A5282;
+}
+.input input{
+width: 45px;
+margin: 0px 3px;
+padding: 3px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+border: none;
+}
+.input select{
+margin: 0px 3px;
+padding: 5px;
+width: 95px; 
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+border: none;
+}
+span{
+margin-left: 25px;
+}
+.span{
+margin-left: 35px;
+}
+
+#calory{
+text-align: center;
+margin-top: 30px;
+
+}
+.input{
+margin-top: 45px;
+
+}
+.weigth{
+margin-bottom: 10px;
+
+}
+.matching{
+    margin-bottom: 10px;
+}
+.H{
+    margin-top: 30px;
+}
