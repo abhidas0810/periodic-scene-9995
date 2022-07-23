@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./footer.css">
     <style>
-        body>#aboutPage{
+        #aboutPage{
             display:flex;
             width: 80%;
             margin: auto;
@@ -21,9 +23,18 @@
         .secondary-title{
             color: rgb(10, 82, 130);
         }
-        img{
+        #our-system>img{
             width: 60%;
-            height: 400px;
+            height: 250px;
+            background-color: transparent;
+        }
+        #healty-living-sub>img{
+          width: 100%;
+            height: 200px;
+        }
+        #our-system>div{
+          padding-right:30px;
+
         }
         #main{
             width: 60%;
@@ -46,69 +57,87 @@
         .member-login>button{
             width: 100%;
             padding: 5px;
+           
         }
         #our-system{
             display:flex;
-            background-color: #f5f1ea;
-            
+            background-color: #f5f1ea;            
         }
+        #healty-living{
+          display: flex;
+          background-color: rgb(234, 234, 234);
+        }
+        #healty-living-sub{
+          width: 60%;
+        }
+        #healty-living-sub+div{
+          padding-right: 40px;
+        }
+        .button{
+            padding: 10px 30px;
+             display: block;
+            margin: auto;
+            background-color: rgb(98, 196, 98);
+            color:white;
+            border: none;
+          border-radius: 10px;
+          }
     </style>
 </head>
 <body>
+  <div id="navbar"></div>
     <div id="aboutPage">
     <div id="main">
         <h2 class="main-title">Lose Weight with MyFitnessPal.com &mdash; for FREE!</h2>
           <p>Losing weight isn&#39;t easy - we know. But with a membership to MyFitnessPal.com, you&#39;ll get the tools you need to successfully take weight off - and keep it off. And best of all, you can signup for free, no strings attached. So put away your credit card - you&#39;ll never have to pay a cent.</p>
       <p>Study after study has confirmed the benefits of keeping track of the food you eat and the activity you do. It&#39;s simple - the more consistently you track your food intake, the more likely you are to lose weight. That&#39;s why every successful weight management program suggests that you keep a food diary and/or an activity log. But recording everything you eat without the right tools can be tedious at best, or simply impossible at worst.</p>
       <p>At MyFitnessPal.com, we focus on making sure you can log your meals as quickly and easily as possible. Because the easier we make it for you, the more likely you are to stay on track, and the more likely you are to succeed in your weight loss goals.</p>
-      <h4 class="secondary-title">How does it work?</h4>
       <div id="our-system">
         <!-- <h4 class="secondary-title">How does it work?</h4> -->
         <img src="https://preview.pixlr.com/images/800wm/100/2/100200285.jpg">
+        <div>
+          <h4 class="secondary-title">How does it work?</h4>
         <p>The reason our system is so easy to use is because <strong>it learns from you!</strong> All of us tend to eat the same foods over time. <strong>MyFitnessPal.com</strong> remembers what you've eaten and done most often in the past, and makes it easy for you to add those foods again to your log.
         <p><strong>So the more you track your meals, the easier it becomes!</strong></p>
+        </div>
       </div>
         <h4 class="secondary-title">With a FREE membership you get:</h4>
       <ul class="list0">
         <li>
-          <h5><span>The easiest to use food diary on the web -</span></h5>
-          <p>  Track what you eat with just a few clicks from anywhere with an internet connection - at home or at work</p>
+          <p><span>The easiest to use food diary on the web -</span>Track what you eat with just a few clicks from anywhere with an internet connection - at home or at work</p>
         </li>
         <li>
-          <h5><span>A searchable food database of over 300,000,000 items -</span></h5>
-          <p>  and it&#39;s growing every day!</p>
+          <p><span>A searchable food database of over 300,000,000 items -</span>  and it&#39;s growing every day!</p>
         </li>
         <li>
-          <h5><span>Your own personal food database -</span></h5>
-          <p>add your own foods and recipes at any time and access them from anywhere with an internet connection</p>
+          <p><span>Your own personal food database -</span>add your own foods and recipes at any time and access them from anywhere with an internet connection</p>
         </li>
         <li>
-          <h5><span>Free mobile apps for iPhone and Android -</span></h5>
-          <p>so you can log your meals and exercise even when you are on the go</p>
+          <p><span>Free mobile apps for iPhone and Android -</span>so you can log your meals and exercise even when you are on the go</p>
         </li>
         <li>
-          <h5><span>Support and motivation  </span></h5>
-          <p>from people just like you - Our discussion forums let you learn from others, share your own tips, receive and give encouragement, and make friends.</p>
+          <p><span>Support and motivation </span>from people just like you - Our discussion forums let you learn from others, share your own tips, receive and give encouragement, and make friends.</p>
         </li>
         <li>
-          <h5>A personalized diet profile</h5>
-          <p>- customized to your unique weight loss goals.</p>
+          <p><span>A personalized diet profile-</span> customized to your unique weight loss goals.</p>
         </li>
         <li>
-          <h5><span>Flexibility</span></h5>
-          <p>- our system can support any diet like Atkins, the South Beach Diet, the Zone, and more. No matter what diet you&#39;re on, we can help.</p>
+          <p><span>Flexibility</span>- our system can support any diet like Atkins, the South Beach Diet, the Zone, and more. No matter what diet you&#39;re on, we can help.</p>
         </li>
       </ul>
       <h4 class="secondary-title">Don&#39;t wait! Start losing weight the healthy way - all for FREE!</h4>
       <div id="healty-living">
         <div id="healty-living-sub">
-            <img src="https://www.healthreviser.com/sites/default/files/imagecache/post_images_250x250/images/fitness_loss_weight.jpg">
+            <img src="https://wp02-media.cdn.ihealthspot.com/wp-content/uploads/sites/432/2019/09/09144212/medical-weight-loss.png">
+          </div>
+          <div>
         <p>All the tools you need for healthy, sustainable weight loss are right at your fingertips - and you&#39;ll never have to pay a cent! So what are you waiting for? Stop wasting money on other dieting programs.</p>
         <p><strong>Join today and get on the path to healthier living!</strong></p>
-        <p class="button"><a class="button" href="/account/create">Join Now for FREE!</a></p>
+        <button class="button">Join Now for FREE!</button>
+      </div>
         </div>
       </div>
-      </div>
+    
     <div>
     <div id="sidebar">
 
@@ -127,5 +156,8 @@
             <p>Not a member yet? <a href="/account/create">Sign up now!</a></p>    
     </div>
 </div>
+<div id="footer"></div>
 </body>
 </html>
+<!-- <script src="./login.js"></script> -->
+<script src="login1.js" type="module"></script>
