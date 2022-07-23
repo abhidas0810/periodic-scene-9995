@@ -7,9 +7,9 @@ return `
 <div id ="fit"><h1>myfitnesspal</h1></div>
 <div></div>
 <div class ="log">
-     <div class="log"> <a href="login.html">Login </a></div>
-     <div>|</div>
-     <div class="log"><a href="sign up.html.html"> Sign Up</div>
+     <div class="login"> <a href="login.html">Login </a></div>
+     <div id="slash">|</div>
+     <div class="signup"><a href="signup.html"> Sign Up</div>
 
 
 </div>
@@ -30,7 +30,7 @@ return `
     <a href="exercise.html">
         <div class="menu">EXCERCISE</div>
     </a>
-    <a href="Apps.html">
+    <a href="apps.html">
         <div class="menu">APPS</div>
     </a>
     <a href="community.html">
