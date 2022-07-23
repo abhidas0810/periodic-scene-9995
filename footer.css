@@ -1,0 +1,48 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+#footer {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 20px;
+  position: relative;
+  bottom: 0%;
+  margin-top: 60px;
+}
+#footer > #options {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+#footer > #options > #pages {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 110px;
+}
+#footer > #options > #pages > a {
+  font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+  font-size: 12px;
+  margin: 6px;
+  text-decoration: none;
+  color: #2974b9;
+}
+#footer > #corporation > p {
+  font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+  text-align: center;
+  font-size: 11px;
+}
+#language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid green; */
+}
+#language > select {
+  width: 100%;
+  font-size: 10px;
+}
+
