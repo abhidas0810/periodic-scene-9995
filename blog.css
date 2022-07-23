@@ -114,9 +114,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-#infoAppend > div {
-  /* border: 1px solid; */
-}
 #infoAppend > div > img {
   width: 100%;
 }
