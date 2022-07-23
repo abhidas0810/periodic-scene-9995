@@ -65,7 +65,7 @@
   font-weight: 900;
 }
 .trendCart {
-  width: 210px;
+  width: 100%;
 }
 .trendCart > p {
   color: grey;
@@ -129,3 +129,4 @@
   border: none;
   cursor: pointer;
 }
+
