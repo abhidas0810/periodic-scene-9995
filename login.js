@@ -21,7 +21,7 @@ if(password=="") alert("Wrong credentials")
 else if(email==""){
     alert("User doesn't exist, Sign Up")
 }else{
-       if(mailCheck(email,password)==true){
+       if(mailCheck(email,password)==false){
        alert("Login successful!")
        window.location.href="index.html"
     }else{
