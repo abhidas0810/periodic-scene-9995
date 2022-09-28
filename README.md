@@ -19,24 +19,23 @@
 #### `Landing Page`
 ![img](https://github.com/abhidas0810/periodic-scene-9995/blob/main/readme_docs/1.png)
 <br/>
-#### `Signup Page`
+#### `Food Page`
 ![img](https://github.com/abhidas0810/periodic-scene-9995/blob/main/readme_docs/2.png)
 <br/>
-#### `Men Page`
-![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/men.png)
+#### `Excercise Page`
+![img](https://github.com/abhidas0810/periodic-scene-9995/blob/main/readme_docs/3.png)
 <br/>
-#### `Women Page`
-![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/women.png)
+#### `Apps Page`
+![img](https://github.com/abhidas0810/periodic-scene-9995/blob/main/readme_docs/4.png)
 <br/>
-#### `Shopping Bag Page`
-![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/bag.png)
+#### `Community Page`
+![img](https://github.com/abhidas0810/periodic-scene-9995/blob/main/readme_docs/5.png)
 <br/>
-#### `Payment Page`
-![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/payment.png)
+#### `Blog Page`
+![img](https://github.com/abhidas0810/periodic-scene-9995/blob/main/readme_docs/6.png)
 <br/>
-#### `Otp Page`
-![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/otp.png)
+#### `Premium Page`
+![img](https://github.com/abhidas0810/periodic-scene-9995/blob/main/readme_docs/7.png)
 <br/>
-#### `Ordered Page`
-![img](https://github.com/suraj-996/ssense_unit2_project/blob/master/photos/order.png)
+
 
